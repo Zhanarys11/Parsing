@@ -12,7 +12,7 @@ git commit -m "Парсил Kolesa"
 git remote add origin git@github.com:BAZAAR-ITC/KalesoKz.git
 
 # Создание ветки для репозитория OneRequests [local]
-git checkout -b zhanarys
+git checkout -b zhanarys1
 
 # Отправка в репозиторию OneRequests [global]
-git push -u origin zhanarys
+git push -u origin zhanarys1

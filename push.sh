@@ -6,13 +6,13 @@ git init
 git add .
 
 # Создание коммита с сообщением OneRequests [local]
-git commit -m "Мы дописали проект Kolesa"
+git commit -m "Парсил Kolesa"
 
 # Подключаем нашу папку OneRequests к репозитории [local & global]
-git remote add origin git@github.com:Zhanarys11/Parsing.git
+git remote add origin git@github.com:BAZAAR-ITC/KalesoKz.git
 
 # Создание ветки для репозитория OneRequests [local]
-# git checkout -b zhanarys
+git checkout -b zhanarys
 
 # Отправка в репозиторию OneRequests [global]
-git push -u origin master
+git push -u origin zhanarys

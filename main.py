@@ -88,16 +88,20 @@ def run_parser():
 
     big_data = []
     ID = 1
-    for page in range(1,15):
+    for page in range(11, 14):
         if page > 1:
             URL = URL + f"?page={page}"
 
         html = get_html(URL, header)
+        time.sleep(1)
         data, id = processing(html, ID, DOMAIN)
         ID = id
         big_data.extend(data)
 
-        print(f"Обработана {page} страниц")
+        print(f"Обработана {page} страница")
+
+    with open("data.json", "w") as file1:
+        json.dump(big_data, file1, indent=4, ensure_ascii=False)
 
     with open("data.csv", "w") as file:
         writer = csv.writer(file)
